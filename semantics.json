@@ -1,0 +1,90 @@
+[
+  {
+    "name": "taskDescription",
+    "label": "Description of options",
+    "type": "text",
+    "widget": "html",
+    "importance": "high",
+    "description": "Description of what the user should choose.",
+    "enterMode": "div",
+    "tags": [
+      "strong",
+      "em",
+      "u",
+      "a",
+      "ul",
+      "ol",
+      "h2",
+      "h3",
+      "hr",
+      "pre",
+      "code"
+    ],
+    "optional": true
+  },
+  {
+    "name": "dropdownLabels",
+    "type": "list",
+    "label": "Dropdown labels",
+    "entity": "label",
+    "min": 1,
+    "field": {
+      "name": "label",
+      "type": "text",
+      "label": "Dropdown label"
+    }
+  },
+  {
+    "name": "requiredField",
+    "label": "Required field",
+    "type": "boolean",
+    "importance": "low",
+    "default": false,
+    "optional": true,
+    "description": "Check to make this field required, the user must check at least one checkbox to be able to export a document."
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "label": "Localization",
+    "common": true,
+    "fields": [
+      {
+        "name": "noDropdownLabelsConfigured",
+        "type": "text",
+        "label": "Message no dropdown labels configured",
+        "description": "Label to set when no dropdown labels have been configured by the editor.",
+        "default": "No dropdown labels were configured!"
+      },
+      {
+        "name": "dummy",
+        "type": "text",
+        "label": "Dummy",
+        "default": "Dummy",
+        "widget": "none"
+      }
+    ]
+  },
+  {
+    "name": "a11y",
+    "type": "group",
+    "label": "Accessibility texts",
+    "common": true,
+    "fields": [
+      {
+        "name": "selectARIALabel",
+        "type": "text",
+        "label": "Label for select field",
+        "description": "Label to help understand what the options are about if no task description is added.",
+        "default": "Your options"
+      },
+      {
+        "name": "dummy",
+        "type": "text",
+        "label": "Dummy",
+        "default": "Dummy",
+        "widget": "none"
+      }
+    ]
+  }
+]
