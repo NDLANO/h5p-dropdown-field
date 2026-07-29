@@ -1,6 +1,5 @@
 {
   "name": "h5p-dropdown-field",
-  "version": "1.0.0",
   "description": "A configurable editor element that can be used to describe a dropdown field",
   "private": true,
   "scripts": {
